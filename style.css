@@ -1,3 +1,4 @@
+/*tells every element not to have margins, padding and have border box sizing*/
 * {
     margin: 0;
     padding: 0;
