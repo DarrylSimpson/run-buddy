@@ -430,12 +430,14 @@ section {
 
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
@@ -568,7 +570,7 @@ section {
     background: var(--teritiary-color);
 }
 
-/* MEDIA QUETY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     /*this will be applied on any screen smaller than 980px*/
         header {
@@ -619,7 +621,7 @@ section {
     
 }
 
-/*MEDIA QUESTY FOR TABLETS AND SMALLER*/
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
 @media screen and (max-width: 768px) {
         /*this will be applied on any screen between 768 and 575px*/
         section {
@@ -660,11 +662,19 @@ section {
             grid-column: 1/-1;
         }
 
-        .serive-grid-itel.cancel {
+        .service-grid-item.cancel {
             transform: none;
             writing-mode: unset;
             grid-column: 1/-1;
             grid-row: -1;
+        }
+
+        .trainer-img, .trainer-img h4, .trainer-img::after {
+            display: none;
+        }
+
+        .trainer-bio h3, .trainer-bio h4 {
+            display: inline-block;
         }
 
      
